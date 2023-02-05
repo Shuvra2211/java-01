@@ -1,0 +1,164 @@
+/* common css section start */
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+P{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3{
+    font-family: 'Abril Fatface', cursive;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* 
+img{
+    display: block;
+} */
+
+ul{
+    list-style-type: none;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-3{
+    width: calc(100% / 3);
+}
+
+.w-20{
+    width: 20%;
+}
+
+
+.justify-content-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+/* common css section end */
+
+  
+/* nav css section start */
+nav{
+    text-align: justify;
+    background-color: #bfbfbf;
+}
+
+nav div.row{
+    align-items: center;
+}
+
+nav .logo{
+    width: 25%;
+}
+
+nav div.menu{
+    width: 75%;
+}
+
+nav div .menu ul{
+    justify-content: flex-end;
+}
+
+nav .menu ul li a{
+    color: #222222;
+    text-transform: uppercase;
+    padding: 29px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+    transition: 0.8s;
+    position: relative;
+    z-index: 1;
+}
+
+nav .menu ul li a:hover{
+    color: orange;
+}
+
+nav .menu ul li button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 22px;
+    margin-right: 10px;
+    transition: 0.68s;
+    color: #bfbfbf;
+    border: none;
+}
+
+nav .menu ul li button:hover{
+    color: grey;
+    background-color: red;
+}
+
+/* nav section css end */
+
+  /* Sidebar Section Css Start */
+  #sidebar{
+    background: #bfbfbf;
+    width: 150px;
+    padding-top: 10px;
+    position: fixed;
+    right: -250px;
+    top: 76px;
+    bottom: 0;
+    z-index: 999;
+    transition: .67s;
+    transform:  rotate(50deg) skew(50deg);
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: right top;
+  }
+
+  #sidebar ul li a{
+    font-size: 20px;
+    display: block;
+    padding-bottom: 15px;
+    font-weight: 400;
+    color: black;
+    transition: 0.6s;
+  }
+
+  #sidebar ul li a:hover{
+    color: red;
+  }
+  #sidebar.active{
+    right: 0px;
+    transform:  rotate(0deg) skew(0deg);
+    opacity: 1;
+    visibility: visible;
+  }
+  /* //Sidebar Section Css End */
+
+ input{
+    margin-left: 50px;
+ }
